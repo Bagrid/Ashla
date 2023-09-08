@@ -1,8 +1,61 @@
-\documentclass{article}
+\documentclass[titlepage, 12pt, openright]{report}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{imakeidx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage[toc]{glossaries}
+\usepackage[12pt]{moresize}
+\usepackage[french]{babel}
+
+\setcounter{secnumdepth}{5} % change la profondeur des numérotations dans
+                            % la table des matières
+
+\title{Ashla}
+
+\graphicspath{{.}}
+\makeindex[intoc]
 
 \begin{document}
-	Bonjour tout le monde!
-
-	C'est mon premier document LaTeX.
+	% ==================================================================
+	% * Page de Titre
+	% ==================================================================
+	\begin{center}
+		\medskip
+		{\HUGE\textsc{Ashla}}
+	\end{center}
+	\newpage
+	
+	
+	% ==================================================================
+	% * Page de Garde
+	% ==================================================================
+	.
+	\newpage
+	
+	
+	% ==================================================================
+	% * Table des Matières
+	% ==================================================================
+	\tableofcontents
+	
+	
+	% ==================================================================
+	% * Table des Illustrations
+	% ==================================================================
+	\listoffigures
+	
+	
+	% ==================================================================
+	% * Début du contenu du document
+	% * 
+	% * Ne pas écrire au-dessus
+	% ==================================================================
+	
+	% ==================================================================
+	% * Fin du contenu du document
+	% * 
+	% * Ne pas écrire en-dessous
+	% ==================================================================
 \end{document}
