@@ -1,0 +1,71 @@
+\documentclass[titlepage, 12pt, openright]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{imakeidx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage[toc]{glossaries}
+\usepackage[12pt]{moresize}
+\usepackage[french]{babel}
+
+\setcounter{secnumdepth}{5} % change la profondeur des numérotations dans
+                            % la table des matières
+
+\title{Ashla}
+
+\graphicspath{{.}}
+\makeindex[intoc]
+
+\begin{document}
+	\begin{center}
+		\medskip
+		{\HUGE\textsc{Ashla}}
+	\end{center}
+	\newpage
+	.
+	\newpage
+	\tableofcontents
+	\listoffigures
+	\newpage
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\part{Partie}
+		Ceci est un texte en introduction de partie.
+		
+		\chapter{Chapitre}
+			Ceci est un texte en introduction de chapitre, sur une seule colonne.
+			
+			\begin{multicols}{2}
+				Ceci est, quant à lui, un texte présenté sur deux colonnes. Il peut être utile comme corps de texte, différencié clairement de l'introduction par la présence de multiples colonnes en lieu et place d'une seule pour l'introduction.
+			\end{multicols}			
+			
+			\section{Section}
+				\begin{multicols}{2}
+					Ceci est un texte situé dans une section. Il est présenté, comme d'habitude, sur deux colonnes. On peut faire plusieurs paragraphes comme ceci, dans un seul bloc.
+					
+					Par exemple, ici, c'est un deuxième paragraphe, mais inséré dans le même bloc multi-colonnes.
+				\end{multicols}
+				
+				\subsection{Sous-Section}
+					\begin{multicols}{2}
+						Youhou ! Du texte dans une sous-section !
+					\end{multicols}
+					
+					\subsubsection{Sous-Sous-Section}
+						\begin{multicols}{2}
+							Je ne sais pas pourquoi vous pourriez avoir besoin de mettre une sous-sous-section, mais si vous avez besoin, vous pouvez !
+						\end{multicols}
+						
+						\paragraph{Paragraph}
+							\begin{multicols}{2}
+								Si jamais vous voulez donner un titre à un paragraphe, vous pouvez. C'est chelou, mais c'est possible.
+							\end{multicols}
+							
+							\subparagraph{Sous-Paragraphe}
+								\begin{multicols}{2}
+									Nan mais abuse pas, frère...
+								\end{multicols}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
